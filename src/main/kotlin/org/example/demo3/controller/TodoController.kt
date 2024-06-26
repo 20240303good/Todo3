@@ -1,16 +1,15 @@
 package org.example.demo3.controller
 
-import com.sun.tools.javac.comp.Todo
 import org.example.demo3.controller.request.CreateTodoRequest
 import org.springframework.http.ResponseEntity
-import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RestController
 
-@Controller
+@RestController
 class TodoController {
     @PostMapping("/todos")
-    fun createTodo(
+    fun CreateTodo(
         @RequestBody request : CreateTodoRequest,
     ): ResponseEntity<Boolean> {
         return ResponseEntity.ok(true)
