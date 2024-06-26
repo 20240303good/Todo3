@@ -1,7 +1,7 @@
 package org.example.demo3.controller.request
 
-data class CreateRequest (
-    val title : String,
+data class CreateTodoRequest (
+    val title: String,
     val content: String,
     val writer: String
 )
