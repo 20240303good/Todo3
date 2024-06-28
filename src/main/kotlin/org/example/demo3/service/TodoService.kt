@@ -11,7 +11,7 @@ class TodoService(
 ) {
     fun createTodo(request: CreateTodoRequest): Boolean{
 
-        try{
+        return try{
             todoRepository.save(
                 Todo(
                     title = request.title,
