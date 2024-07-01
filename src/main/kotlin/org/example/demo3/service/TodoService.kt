@@ -21,10 +21,8 @@ class TodoService(
                 )
             )
             true
-        }catch (e:Exception) {
+        } catch (e:Exception) {
             false
         }
-
     }
 }
-
